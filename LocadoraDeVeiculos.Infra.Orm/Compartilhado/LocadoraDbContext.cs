@@ -1,11 +1,13 @@
 ﻿using System.Reflection;
+using LocadoraDeVeiculos.Dominio.ModuloGrupoVeiculos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace LocadoraDeVeiculos.Infra.Orm.Compartilhado
 {
-	public class LocadoraDbContext : DbContext
+    public class LocadoraDbContext : DbContext
 	{
+		public DbSet<GrupoVeiculos> GruposVeiculos { get; set; }
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 			var config = new ConfigurationBuilder()
@@ -22,7 +24,7 @@ namespace LocadoraDeVeiculos.Infra.Orm.Compartilhado
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetEntryAssembly());
+			modelBuilder.ApplyConfiguration(new MapeadorGrupoVeiculos());
 
 			base.OnModelCreating(modelBuilder);
 		}
