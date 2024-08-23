@@ -1,6 +1,11 @@
-using AutoMapper;
+using LocadoraDeVeiculos.Infra.Orm.ModuloGrupoVeiculos;
+using LocadoraDeVeiculos.Dominio.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Infra.Orm.Compartilhado;
 using System.Reflection;
+using LocadoraDeVeiculos.Aplicacao.ModuloGrupoVeiculos;
+using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
+using LocadoraDeVeiculos.Infra.Orm.ModuloVeiculo;
+using LocadoraDeVeiculos.Aplicacao.ModuloVeiculo;
 
 namespace LocadoraDeVeiculos.WebApp
 {
@@ -11,6 +16,12 @@ namespace LocadoraDeVeiculos.WebApp
 			var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddDbContext<LocadoraDbContext>();
+
+			builder.Services.AddScoped<IRepositorioGrupoVeiculos, RepositorioGrupoVeiculosEmOrm>();
+			builder.Services.AddScoped<ServicoGrupoVeiculos>();
+
+			builder.Services.AddScoped<IRepositorioVeiculo, RepositorioVeiculoEmOrm>();
+			builder.Services.AddScoped<ServicoVeiculo>();
 
 			builder.Services.AddAutoMapper(cfg =>
 			{

@@ -1,9 +1,13 @@
-﻿using LocadoraDeVeiculos.Infra.Orm.Compartilhado;
+﻿using LocadoraDeVeiculos.Dominio.ModuloGrupoVeiculos;
+using LocadoraDeVeiculos.Infra.Orm.Compartilhado;
 using LocadoraDeVeiculos.Infra.Orm.ModuloGrupoVeiculos;
+using FizzWare.NBuilder;
 
 
 namespace LocadoraDeVeiculos.Testes.Integracao.ModuloGrupoVeiculos;
 
+[TestClass]
+[TestCategory("Integração")]
 public class RepositorioGrupoVeiculosEmOrmTests
 {
     private LocadoraDbContext dbContext;
@@ -17,23 +21,53 @@ public class RepositorioGrupoVeiculosEmOrmTests
         dbContext.GruposVeiculos.RemoveRange(dbContext.GruposVeiculos);
 
         repositorio = new RepositorioGrupoVeiculosEmOrm(dbContext);
+
+        BuilderSetup.SetCreatePersistenceMethod<GrupoVeiculos>(repositorio.Inserir);
     }
 
     [TestMethod]
     public void Deve_Inserir_GrupoVeiculos()
     {
+        var grupo = Builder<GrupoVeiculos>
+            .CreateNew()
+            .Persist();
 
+        var grupoSelecionado = repositorio.SelecionarPorId(grupo.Id);
+
+        Assert.IsNotNull(grupoSelecionado);
+        Assert.AreEqual(grupo, grupoSelecionado);
     }
 
     [TestMethod]
     public void Deve_Editar_GrupoVeiculos()
     {
+        var grupo = Builder<GrupoVeiculos>
+            .CreateNew()
+            .Persist();
 
+        grupo.Nome = "Teste de Edição";
+        repositorio.Editar(grupo);
+
+        var grupoSelecionado = repositorio.SelecionarPorId(grupo.Id);
+
+        Assert.IsNotNull(grupoSelecionado);
+        Assert.AreEqual(grupo, grupoSelecionado);
     }
 
     [TestMethod]
     public void Deve_Excluir_GrupoVeiculos()
     {
+        var grupo = Builder<GrupoVeiculos>
+           .CreateNew()
+           .Persist();
 
+        repositorio.Excluir(grupo);
+
+        var grupoSelecionado = repositorio.SelecionarPorId(grupo.Id);
+
+        var grupos = repositorio.SelecionarTodos();
+
+        Assert.IsNull(grupoSelecionado);
+        Assert.AreEqual(0, grupos.Count);
     }
 }
