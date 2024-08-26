@@ -9,8 +9,10 @@ public class Veiculo : EntidadeBase
     public string Marca { get; set; }
     public TipoCombustivel TipoCombustivel { get; set; }
     public int CapacidadeTanque {  get; set; }
+    public byte[] Foto { get; set; }
     public int GrupoVeiculosId {  get; set; }
     public GrupoVeiculos? GrupoVeiculos { get; set; }
+    
 
     protected Veiculo() { }
 

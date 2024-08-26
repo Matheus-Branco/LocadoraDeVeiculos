@@ -6,6 +6,7 @@ using LocadoraDeVeiculos.Aplicacao.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
 using LocadoraDeVeiculos.Infra.Orm.ModuloVeiculo;
 using LocadoraDeVeiculos.Aplicacao.ModuloVeiculo;
+using LocadoraDeVeiculos.WebApp.Mapping;
 
 namespace LocadoraDeVeiculos.WebApp
 {
@@ -22,6 +23,8 @@ namespace LocadoraDeVeiculos.WebApp
 
 			builder.Services.AddScoped<IRepositorioVeiculo, RepositorioVeiculoEmOrm>();
 			builder.Services.AddScoped<ServicoVeiculo>();
+
+			builder.Services.AddScoped<FotoValueResolver>();
 
 			builder.Services.AddAutoMapper(cfg =>
 			{
