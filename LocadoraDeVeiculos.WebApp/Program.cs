@@ -3,9 +3,12 @@ using LocadoraDeVeiculos.Dominio.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Infra.Orm.Compartilhado;
 using System.Reflection;
 using LocadoraDeVeiculos.Aplicacao.ModuloGrupoVeiculos;
+using LocadoraDeVeiculos.Aplicacao.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
 using LocadoraDeVeiculos.Infra.Orm.ModuloVeiculo;
 using LocadoraDeVeiculos.Aplicacao.ModuloVeiculo;
+using LocadoraDeVeiculos.Dominio.ModuloPlanoCobranca;
+using LocadoraDeVeiculos.Infra.Orm.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.WebApp.Mapping;
 
 namespace LocadoraDeVeiculos.WebApp
@@ -19,10 +22,12 @@ namespace LocadoraDeVeiculos.WebApp
             builder.Services.AddDbContext<LocadoraDbContext>();
 
 			builder.Services.AddScoped<IRepositorioGrupoVeiculos, RepositorioGrupoVeiculosEmOrm>();
-			builder.Services.AddScoped<ServicoGrupoVeiculos>();
-
 			builder.Services.AddScoped<IRepositorioVeiculo, RepositorioVeiculoEmOrm>();
+            builder.Services.AddScoped<IRepositorioPlanoCobranca, RepositorioPlanoCobrancaEmOrm>();
+
+			builder.Services.AddScoped<ServicoGrupoVeiculos>();
 			builder.Services.AddScoped<ServicoVeiculo>();
+            builder.Services.AddScoped<ServicoPlanoCobranca>();
 
 			builder.Services.AddScoped<FotoValueResolver>();
 
