@@ -9,11 +9,11 @@ using LocadoraDeVeiculos.Infra.Orm.ModuloVeiculo;
 using LocadoraDeVeiculos.Aplicacao.ModuloVeiculo;
 using LocadoraDeVeiculos.Dominio.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Infra.Orm.ModuloPlanoCobranca;
-using LocadoraDeVeiculos.WebApp.Mapping;
+using LocadoraDeVeiculos.WebApp.Mapping.Resolvers;
 
 namespace LocadoraDeVeiculos.WebApp
 {
-	public class Program
+    public class Program
 	{
 		public static void Main(string[] args)
 		{
@@ -30,6 +30,7 @@ namespace LocadoraDeVeiculos.WebApp
             builder.Services.AddScoped<ServicoPlanoCobranca>();
 
 			builder.Services.AddScoped<FotoValueResolver>();
+			builder.Services.AddScoped<GrupoVeiculosResolver>();
 
 			builder.Services.AddAutoMapper(cfg =>
 			{

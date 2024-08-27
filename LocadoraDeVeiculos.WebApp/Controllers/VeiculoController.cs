@@ -91,11 +91,6 @@ namespace LocadoraDeVeiculos.WebApp.Controllers
 
             var editarVm = mapeador.Map<EditarVeiculoViewModel>(veiculo);
 
-            var gruposDisponiveis = resultadoGrupos.Value;
-
-            editarVm.GruposVeiculos = gruposDisponiveis
-                .Select(g => new SelectListItem(g.Nome, g.Id.ToString()));
-
             return View(editarVm);
         }
 
@@ -205,14 +200,8 @@ namespace LocadoraDeVeiculos.WebApp.Controllers
             var gruposDisponiveis = resultadoGrupos.Value;
 
             if (dadosPrevios is null)
-            {
-                var formularioVm = new FormularioVeiculoViewModel
-                {
-                    GruposVeiculos = resultadoGrupos.Value
-                    .Select(g => new SelectListItem(g.Nome, g.Id.ToString()))
-                };
-                return formularioVm;
-            }
+                dadosPrevios = new FormularioVeiculoViewModel();
+            
             dadosPrevios.GruposVeiculos = gruposDisponiveis
                 .Select(g => new SelectListItem(g.Nome, g.Id.ToString()));
 

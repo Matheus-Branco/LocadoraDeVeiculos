@@ -82,11 +82,6 @@ namespace LocadoraDeVeiculos.WebApp.Controllers
 
             var editarVm = mapeador.Map<EditarPlanoCobrancaViewModel>(planoCobranca);
 
-            var grupos = servicoGrupos.SelecionarTodos().Value;
-
-            editarVm.GruposVeiculos = grupos
-                .Select(g => new SelectListItem(g.Nome, g.Id.ToString()));
-
             return View(editarVm);
         }
 
