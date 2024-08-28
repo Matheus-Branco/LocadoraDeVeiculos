@@ -52,4 +52,8 @@
     <ProjectReference Include="..\LocadoraDeVeiculos.Infra.Orm\LocadoraDeVeiculos.Infra.Orm.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Taxa\" />
+  </ItemGroup>
+
 </Project>
