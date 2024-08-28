@@ -1,5 +1,6 @@
 ﻿using System.Net.Mail;
 using LocadoraDeVeiculos.Dominio.Compartilhado;
+using LocadoraDeVeiculos.Dominio.ModuloCondutor;
 
 namespace LocadoraDeVeiculos.Dominio.ModuloCliente
 {
@@ -17,6 +18,7 @@ namespace LocadoraDeVeiculos.Dominio.ModuloCliente
         public string Bairro { get; set; }
         public string Rua { get; set; }
         public string Numero { get; set; }
+        public IEnumerable<Condutor>? Condutores { get; set; }
 
         public Cliente() { }
         public Cliente(string nome, string email, string telefone, TipoCadastroClienteEnum tipoCadastro, string numeroDocumento, string cidade, string estado, string bairro, string rua, string numero)
