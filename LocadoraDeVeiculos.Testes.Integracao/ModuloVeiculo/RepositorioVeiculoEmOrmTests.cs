@@ -16,7 +16,6 @@ public class RepositorioVeiculoEmOrmTests
     private RepositorioGrupoVeiculosEmOrm repositorioGrupos;
 
     [TestInitialize]
-
     public void Inicializar()
     {
         dbContext = new LocadoraDbContext();

@@ -9,20 +9,9 @@ public class RepositorioVeiculoEmOrm : RepositorioBaseEmOrm<Veiculo>, IRepositor
     public RepositorioVeiculoEmOrm(LocadoraDbContext dbContext) : base(dbContext)
     {
     }
+
     protected override DbSet<Veiculo> ObterRegistros()
     {
         return dbContext.Veiculos;
-    }
-    public override Veiculo? SelecionarPorId(int id)
-    {
-        return ObterRegistros()
-            .Include(v => v.GrupoVeiculos)
-            .FirstOrDefault(Veiculo => Veiculo.Id == id);
-    }
-    public override List<Veiculo> SelecionarTodos() 
-    {
-        return ObterRegistros()
-            .Include(v => v.GrupoVeiculos)
-            .ToList();
     }
 }

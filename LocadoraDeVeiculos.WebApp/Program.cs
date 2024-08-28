@@ -8,11 +8,14 @@ using LocadoraDeVeiculos.Aplicacao.ModuloTaxa;
 using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
 using LocadoraDeVeiculos.Infra.Orm.ModuloVeiculo;
 using LocadoraDeVeiculos.Aplicacao.ModuloVeiculo;
+using LocadoraDeVeiculos.Dominio.ModuloCliente;
 using LocadoraDeVeiculos.Dominio.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Dominio.ModuloTaxa;
 using LocadoraDeVeiculos.Infra.Orm.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Infra.Orm.ModuloTaxa;
 using LocadoraDeVeiculos.WebApp.Mapping.Resolvers;
+using LocadoraDeVeiculos.Infra.Orm.ModuloCliente;
+using LocadoraDeVeiculos.Aplicacao.ModuloCliente;
 
 namespace LocadoraDeVeiculos.WebApp
 {
@@ -28,13 +31,15 @@ namespace LocadoraDeVeiculos.WebApp
 			builder.Services.AddScoped<IRepositorioVeiculo, RepositorioVeiculoEmOrm>();
             builder.Services.AddScoped<IRepositorioPlanoCobranca, RepositorioPlanoCobrancaEmOrm>();
             builder.Services.AddScoped<IRepositorioTaxa, RepositorioTaxaEmOrm>();
+            builder.Services.AddScoped<IRepositorioCliente, RepositorioClienteEmOrm>();
 
-			builder.Services.AddScoped<ServicoGrupoVeiculos>();
+            builder.Services.AddScoped<ServicoGrupoVeiculos>();
 			builder.Services.AddScoped<ServicoVeiculo>();
             builder.Services.AddScoped<ServicoPlanoCobranca>();
             builder.Services.AddScoped<ServicoTaxa>();
+            builder.Services.AddScoped<ServicoCliente>();
 
-			builder.Services.AddScoped<FotoValueResolver>();
+            builder.Services.AddScoped<FotoValueResolver>();
 			builder.Services.AddScoped<GrupoVeiculosResolver>();
 
 			builder.Services.AddAutoMapper(cfg =>
