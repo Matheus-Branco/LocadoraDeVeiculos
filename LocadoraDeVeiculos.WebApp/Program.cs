@@ -16,6 +16,9 @@ using LocadoraDeVeiculos.Infra.Orm.ModuloTaxa;
 using LocadoraDeVeiculos.WebApp.Mapping.Resolvers;
 using LocadoraDeVeiculos.Infra.Orm.ModuloCliente;
 using LocadoraDeVeiculos.Aplicacao.ModuloCliente;
+using LocadoraDeVeiculos.Aplicacao.ModuloCondutor;
+using LocadoraDeVeiculos.Dominio.ModuloCondutor;
+using LocadoraDeVeiculos.Infra.Orm.ModuloCondutor;
 
 namespace LocadoraDeVeiculos.WebApp
 {
@@ -32,12 +35,14 @@ namespace LocadoraDeVeiculos.WebApp
             builder.Services.AddScoped<IRepositorioPlanoCobranca, RepositorioPlanoCobrancaEmOrm>();
             builder.Services.AddScoped<IRepositorioTaxa, RepositorioTaxaEmOrm>();
             builder.Services.AddScoped<IRepositorioCliente, RepositorioClienteEmOrm>();
+            builder.Services.AddScoped<IRepositorioCondutor, RepositorioCondutorEmOrm>();
 
             builder.Services.AddScoped<ServicoGrupoVeiculos>();
 			builder.Services.AddScoped<ServicoVeiculo>();
             builder.Services.AddScoped<ServicoPlanoCobranca>();
             builder.Services.AddScoped<ServicoTaxa>();
             builder.Services.AddScoped<ServicoCliente>();
+            builder.Services.AddScoped<ServicoCondutor>();
 
             builder.Services.AddScoped<FotoValueResolver>();
 			builder.Services.AddScoped<GrupoVeiculosResolver>();

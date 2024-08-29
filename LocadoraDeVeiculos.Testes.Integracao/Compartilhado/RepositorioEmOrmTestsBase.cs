@@ -1,11 +1,13 @@
 ﻿using FizzWare.NBuilder;
 using LocadoraDeVeiculos.Dominio.ModuloCliente;
+using LocadoraDeVeiculos.Dominio.ModuloCondutor;
 using LocadoraDeVeiculos.Dominio.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Dominio.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Dominio.ModuloTaxa;
 using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
 using LocadoraDeVeiculos.Infra.Orm.Compartilhado;
 using LocadoraDeVeiculos.Infra.Orm.ModuloCliente;
+using LocadoraDeVeiculos.Infra.Orm.ModuloCondutor;
 using LocadoraDeVeiculos.Infra.Orm.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Infra.Orm.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Infra.Orm.ModuloTaxa;
@@ -18,6 +20,7 @@ namespace LocadoraDeVeiculos.Testes.Integracao.Compartilhado
         protected LocadoraDbContext dbContext;
         protected RepositorioTaxaEmOrm repositorioTaxa;
         protected RepositorioClienteEmOrm repositorioCliente;
+        protected RepositorioCondutorEmOrm repositorioCondutor;
         protected RepositorioVeiculoEmOrm repositorioVeiculo;
         protected RepositorioGrupoVeiculosEmOrm repositorioGrupo;
         protected RepositorioPlanoCobrancaEmOrm repositorioPlano;
@@ -28,6 +31,7 @@ namespace LocadoraDeVeiculos.Testes.Integracao.Compartilhado
             dbContext.Taxas.RemoveRange(dbContext.Taxas);
             dbContext.PlanosCobranca.RemoveRange(dbContext.PlanosCobranca);
             dbContext.Clientes.RemoveRange(dbContext.Clientes);
+            dbContext.Condutores.RemoveRange(dbContext.Condutores);
             dbContext.Veiculos.RemoveRange(dbContext.Veiculos);
             dbContext.GruposVeiculos.RemoveRange(dbContext.GruposVeiculos);
 
@@ -36,12 +40,14 @@ namespace LocadoraDeVeiculos.Testes.Integracao.Compartilhado
             repositorioTaxa = new RepositorioTaxaEmOrm(dbContext);
             repositorioPlano = new RepositorioPlanoCobrancaEmOrm(dbContext);
             repositorioCliente = new RepositorioClienteEmOrm(dbContext);
+            repositorioCondutor = new RepositorioCondutorEmOrm(dbContext);
             repositorioVeiculo = new RepositorioVeiculoEmOrm(dbContext);
             repositorioGrupo = new RepositorioGrupoVeiculosEmOrm(dbContext);
 
             BuilderSetup.SetCreatePersistenceMethod<Taxa>(repositorioTaxa.Inserir);
             BuilderSetup.SetCreatePersistenceMethod<PlanoCobranca>(repositorioPlano.Inserir);
             BuilderSetup.SetCreatePersistenceMethod<Cliente>(repositorioCliente.Inserir);
+            BuilderSetup.SetCreatePersistenceMethod<Condutor>(repositorioCondutor.Inserir);
             BuilderSetup.SetCreatePersistenceMethod<Veiculo>(repositorioVeiculo.Inserir);
             BuilderSetup.SetCreatePersistenceMethod<GrupoVeiculos>(repositorioGrupo.Inserir);
         }

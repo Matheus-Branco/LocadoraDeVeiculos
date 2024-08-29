@@ -20,7 +20,10 @@ namespace LocadoraDeVeiculos.Dominio.ModuloCliente
         public string Numero { get; set; }
         public IEnumerable<Condutor>? Condutores { get; set; }
 
-        public Cliente() { }
+        public Cliente()
+        {
+            Condutores = [];
+        }
         public Cliente(string nome, string email, string telefone, TipoCadastroClienteEnum tipoCadastro, string numeroDocumento, string cidade, string estado, string bairro, string rua, string numero)
         {
             Nome = nome;
