@@ -46,11 +46,11 @@ namespace LocadoraDeVeiculos.Dominio.ModuloAluguel
             if(ValorEntrada >= 0)
                 erros.Add("O valor de entrada é obrigatório");
 
-            if(Retorno < DateTime.Today)
-                erros.Add("A data de retorno não pode ser anterior ao dia de hoje");
-
             if (DataSaida < DateTime.Today)
                 erros.Add("A data de saída não pode ser anterior ao dia de hoje");
+
+            if (Retorno < DateTime.Today)
+                erros.Add("A data de retorno não pode ser anterior ao dia de hoje");
 
             return erros;
         }
