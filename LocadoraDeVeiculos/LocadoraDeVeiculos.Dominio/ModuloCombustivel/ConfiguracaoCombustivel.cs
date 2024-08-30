@@ -8,16 +8,16 @@ namespace LocadoraDeVeiculos.Dominio.ModuloCombustivel
         public decimal ValorAlcool { get; set; }
         public decimal ValorDiesel { get; set; }
         public decimal ValorGas { get; set; }
-        public decimal ValorGagolina { get; set; }
+        public decimal ValorGasolina { get; set; }
 
         public ConfiguracaoCombustivel(){}
 
-        public ConfiguracaoCombustivel(decimal valorAlcool, decimal valorDiesel, decimal valorGas, decimal valorGagolina) : this()
+        public ConfiguracaoCombustivel(decimal valorAlcool, decimal valorDiesel, decimal valorGas, decimal valorGasolina) : this()
         {
             ValorAlcool = valorAlcool;
             ValorDiesel = valorDiesel;
             ValorGas = valorGas;
-            ValorGagolina = valorGagolina;
+            ValorGasolina = valorGasolina;
         }
 
         public decimal ObterValorCombustivel(TipoCombustivelEnum tipoCombustivel)
@@ -27,7 +27,7 @@ namespace LocadoraDeVeiculos.Dominio.ModuloCombustivel
                 TipoCombustivelEnum.Alcool => ValorAlcool,
                 TipoCombustivelEnum.Diesel => ValorDiesel,
                 TipoCombustivelEnum.Gas => ValorGas,
-                _ => ValorGagolina
+                _ => ValorGasolina
             };
         }
     }

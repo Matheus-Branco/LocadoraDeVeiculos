@@ -12,14 +12,14 @@ namespace LocadoraDeVeiculos.Aplicacao.ModuloCombustivel
             this.repositorioconfig = repositorioconfig;
         }
 
-        public async Task<Result> SalvarConfiguracao(ConfiguracaoCombustivel configuracao)
+        public async Task<Result> SalvarConfiguracaoAsync(ConfiguracaoCombustivel configuracao)
         {
             await repositorioconfig.GravarConfiguracaoAsync(configuracao);
 
             return Result.Ok();
         }
 
-        public async Task<Result<ConfiguracaoCombustivel>> ObterConfiguracao()
+        public async Task<Result<ConfiguracaoCombustivel>> ObterConfiguracaoAsync()
         {
             var config = await repositorioconfig.ObterConfiguracaoAsync();
 
@@ -29,7 +29,7 @@ namespace LocadoraDeVeiculos.Aplicacao.ModuloCombustivel
                     valorAlcool: 0.0m,
                     valorDiesel: 0.0m,
                     valorGas: 0.0m,
-                    valorGagolina: 0.0m
+                    valorGasolina: 0.0m
                 );
             }
 
