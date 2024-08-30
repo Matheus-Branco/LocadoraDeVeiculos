@@ -14,7 +14,7 @@ namespace LocadoraDeVeiculos.Testes.Unidade.ModuloPlanoCobranca
         [TestMethod]
         public void Deve_Criar_Instancia_Valida()
         {
-            var planoConranca = new PlanoCobranca
+            var planoCobranca = new PlanoCobranca
             (
                 1,
                 100.0m,
@@ -25,7 +25,7 @@ namespace LocadoraDeVeiculos.Testes.Unidade.ModuloPlanoCobranca
                 150.0m
             );
 
-            var erros = planoConranca.Validar();
+            var erros = planoCobranca.Validar();
 
             Assert.AreEqual(0, erros.Count);
         }

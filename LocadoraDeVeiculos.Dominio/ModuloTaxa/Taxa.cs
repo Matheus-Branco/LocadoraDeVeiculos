@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,12 +7,6 @@ using LocadoraDeVeiculos.Dominio.Compartilhado;
 
 namespace LocadoraDeVeiculos.Dominio.ModuloTaxa
 {
-    public enum TipoCobrancaEnum
-    {
-        [Display(Name = "Diária")]
-        Diaria,
-        Fixa
-    }
     public class Taxa : EntidadeBase
     {
         public string Nome { get; set; }
