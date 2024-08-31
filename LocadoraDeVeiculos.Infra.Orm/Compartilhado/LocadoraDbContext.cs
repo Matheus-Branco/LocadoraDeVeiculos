@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using LocadoraDeVeiculos.Dominio.ModuloAluguel;
 using LocadoraDeVeiculos.Dominio.ModuloCliente;
 using LocadoraDeVeiculos.Dominio.ModuloCondutor;
 using LocadoraDeVeiculos.Dominio.ModuloGrupoVeiculos;
@@ -21,6 +22,7 @@ namespace LocadoraDeVeiculos.Infra.Orm.Compartilhado
 		public DbSet<Taxa> Taxas { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Condutor> Condutores { get; set; }
+        public DbSet<Aluguel> Alugueis { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{

@@ -9,9 +9,17 @@ namespace LocadoraDeVeiculos.Dominio.ModuloAluguel
 {
     public class Aluguel : EntidadeBase
     {
-        public int ValorEntrada { get; set; }
+        public decimal PrecoTotal { get; set; }
+        public decimal ValorEntrada { get; set; }
         public DateTime DataSaida { get; set; }
-        public DateTime Retorno { get; set; }
+        public DateTime? DataRetorno { get; set; }
+        public DateTime DataRetornoPrevista { get; set; }
+        public bool Concluido { get; set; }
+        public decimal Garantia = 1000.00m;
+        public decimal SeguroValor { get; set; }
+        public string SeguroTipo { get; set; }
+        public decimal? Quilometragem { get; set; }
+        public decimal? CombustivelTanque { get; set; }
 
         public Condutor? Condutor { get; set; }
         public int CondutorId { get; set; }
@@ -25,23 +33,37 @@ namespace LocadoraDeVeiculos.Dominio.ModuloAluguel
         public PlanoCobranca? PlanoCobranca { get; set; }
         public int PlanoCobrancaId { get; set; }
 
-        protected Aluguel(){}
+        public Taxa Taxa { get; set; }
+        public int TaxaId { get; set; }
 
-        public Aluguel(int valorEntrada, DateTime dataSaida, DateTime retorno, int condutorId, int grupoVeiculosId, int veiculoId, int planoCobrancaId)
+        protected Aluguel() { }
+
+        public Aluguel(
+            decimal precoTotal, decimal valorEntrada, DateTime dataSaida, DateTime dataRetornoPrevista, bool concluido, decimal garantia, decimal seguroValor, string seguroTipo,
+            int condutorId, int grupoVeiculosId, int veiculoId, int planoCobrancaId, int taxaId
+        )
         {
+            PrecoTotal = precoTotal;
             ValorEntrada = valorEntrada;
             DataSaida = dataSaida;
-            Retorno = retorno;
+            DataRetornoPrevista = dataRetornoPrevista;
+            Concluido = concluido;
+            Garantia = garantia;
+            SeguroValor = seguroValor;
+            SeguroTipo = seguroTipo;
             CondutorId = condutorId;
             GrupoVeiculosId = grupoVeiculosId;
             VeiculoId = veiculoId;
             PlanoCobrancaId = planoCobrancaId;
+            TaxaId = taxaId;
         }
 
-        public Taxa Taxa { get; set; }
         public override List<string> Validar()
         {
             List<string> erros = [];
+
+            if(PrecoTotal >= 0)
+                erros.Add("O preço total é obrigatório");
 
             if(ValorEntrada >= 0)
                 erros.Add("O valor de entrada é obrigatório");
@@ -49,7 +71,7 @@ namespace LocadoraDeVeiculos.Dominio.ModuloAluguel
             if (DataSaida < DateTime.Today)
                 erros.Add("A data de saída não pode ser anterior ao dia de hoje");
 
-            if (Retorno < DateTime.Today)
+            if (DataRetorno < DateTime.Today)
                 erros.Add("A data de retorno não pode ser anterior ao dia de hoje");
 
             return erros;
