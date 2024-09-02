@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace LocadoraDeVeiculos.Dominio.ModuloAluguel;
+namespace LocadoraDeVeiculos.Dominio.ModuloLocacao;
 
 public enum TipoPlanoCobrancaEnum
 {

@@ -1,4 +1,4 @@
-﻿using LocadoraDeVeiculos.Dominio.ModuloAluguel;
+﻿using LocadoraDeVeiculos.Dominio.ModuloLocacao;
 
 namespace LocadoraDeVeiculos.Testes.Unidade.ModuloLocacao
 {

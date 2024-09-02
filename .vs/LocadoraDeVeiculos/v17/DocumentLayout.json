@@ -3,12 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\controllers\\locacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\controllers\\locacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\locacao\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\locacao\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\locacao\\excluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\locacao\\excluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\locacao\\_informacoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\locacao\\_informacoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\locacao\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\locacao\\listar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\locacao\\inserir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\locacao\\inserir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\locacao\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\locacao\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\locacao\\confirmardevolucao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\locacao\\confirmardevolucao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\locacao\\confirmarabertura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\locacao\\confirmarabertura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\models\\locacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\models\\locacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\mapping\\locacaoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\mapping\\locacaoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\locacao\\realizardevolucao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\locacao\\realizardevolucao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{58EBB1B3-2C2A-48DD-A61E-48883B43E48D}|LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.aplicacao\\modulolocacao\\servicolocacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58EBB1B3-2C2A-48DD-A61E-48883B43E48D}|LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj|solutionrelative:locadoradeveiculos.aplicacao\\modulolocacao\\servicolocacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8AF9EC4D-03BD-450F-9215-14C07C172383}|LocadoraDeVeiculos.Dominio\\LocadoraDeVeiculos.Dominio.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.dominio\\modulolocacao\\locacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8AF9EC4D-03BD-450F-9215-14C07C172383}|LocadoraDeVeiculos.Dominio\\LocadoraDeVeiculos.Dominio.csproj|solutionrelative:locadoradeveiculos.dominio\\modulolocacao\\locacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C3B811F-8769-41EE-9113-CDA6C01A2EDB}|LocadoraDeVeiculos.Infra.Orm\\LocadoraDeVeiculos.Infra.Orm.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.infra.orm\\modulocombustivel\\repositorioconfiguracaocombustivelemorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C3B811F-8769-41EE-9113-CDA6C01A2EDB}|LocadoraDeVeiculos.Infra.Orm\\LocadoraDeVeiculos.Infra.Orm.csproj|solutionrelative:locadoradeveiculos.infra.orm\\modulocombustivel\\repositorioconfiguracaocombustivelemorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8AF9EC4D-03BD-450F-9215-14C07C172383}|LocadoraDeVeiculos.Dominio\\LocadoraDeVeiculos.Dominio.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.dominio\\modulolocacao\\irepositoriolocacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,10 +95,6 @@
       "RelativeMoniker": "D:0:0:{58EBB1B3-2C2A-48DD-A61E-48883B43E48D}|LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj|solutionrelative:locadoradeveiculos.aplicacao\\modulocombustivel\\servicocombustivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.webapp\\views\\combustivel\\configurar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C79D3EAA-D818-4997-9096-34A95A2B9A82}|LocadoraDeVeiculos.WebApp\\LocadoraDeVeiculos.WebApp.csproj|solutionrelative:locadoradeveiculos.webapp\\views\\combustivel\\configurar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -65,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8AF9EC4D-03BD-450F-9215-14C07C172383}|LocadoraDeVeiculos.Dominio\\LocadoraDeVeiculos.Dominio.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.dominio\\modulocombustivel\\configuracaocombustivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8AF9EC4D-03BD-450F-9215-14C07C172383}|LocadoraDeVeiculos.Dominio\\LocadoraDeVeiculos.Dominio.csproj|solutionrelative:locadoradeveiculos.dominio\\modulocombustivel\\configuracaocombustivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C3B811F-8769-41EE-9113-CDA6C01A2EDB}|LocadoraDeVeiculos.Infra.Orm\\LocadoraDeVeiculos.Infra.Orm.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.infra.orm\\modulocombustivel\\repositorioconfiguracaoconfiguracaocombustivelemorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C3B811F-8769-41EE-9113-CDA6C01A2EDB}|LocadoraDeVeiculos.Infra.Orm\\LocadoraDeVeiculos.Infra.Orm.csproj|solutionrelative:locadoradeveiculos.infra.orm\\modulocombustivel\\repositorioconfiguracaoconfiguracaocombustivelemorm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C3B811F-8769-41EE-9113-CDA6C01A2EDB}|LocadoraDeVeiculos.Infra.Orm\\LocadoraDeVeiculos.Infra.Orm.csproj|c:\\users\\jerem\\onedrive\\documentos\\devsistemas\\trabalho06\\locadoradeveiculos.infra.orm\\modulocombustivel\\mapeadorconfiguracaocombustivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,37 +174,180 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Editar.cshtml",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Editar.cshtml",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T22:59:25.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Excluir.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Excluir.cshtml",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Excluir.cshtml",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Excluir.cshtml",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Excluir.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T22:57:20.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Informacoes.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\_Informacoes.cshtml",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\_Informacoes.cshtml",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\_Informacoes.cshtml",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\_Informacoes.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T22:55:26.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Detalhes.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Detalhes.cshtml",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Detalhes.cshtml",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Detalhes.cshtml",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Detalhes.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T22:53:16.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConfirmarDevolucao.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\ConfirmarDevolucao.cshtml",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\ConfirmarDevolucao.cshtml",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\ConfirmarDevolucao.cshtml",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\ConfirmarDevolucao.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T22:46:53.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfirmarAbertura.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\ConfirmarAbertura.cshtml",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\ConfirmarAbertura.cshtml",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\ConfirmarAbertura.cshtml",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\ConfirmarAbertura.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAACBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T22:46:30.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Inserir.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Inserir.cshtml",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Inserir.cshtml",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Inserir.cshtml",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Inserir.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T22:46:21.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Listar.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Listar.cshtml",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Listar.cshtml",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Listar.cshtml",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\Listar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T22:46:12.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LocacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Controllers\\LocacaoController.cs",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Controllers\\LocacaoController.cs",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Controllers\\LocacaoController.cs",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Controllers\\LocacaoController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAApwJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T22:26:20.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LocacaoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Models\\LocacaoViewModel.cs",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Models\\LocacaoViewModel.cs",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Models\\LocacaoViewModel.cs",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Models\\LocacaoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T22:29:07.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RealizarDevolucao.cshtml",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\RealizarDevolucao.cshtml",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\RealizarDevolucao.cshtml",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Locacao\\RealizarDevolucao.cshtml",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Views\\Locacao\\RealizarDevolucao.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T22:46:37.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LocacaoProfile.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Mapping\\LocacaoProfile.cs",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Mapping\\LocacaoProfile.cs",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Mapping\\LocacaoProfile.cs",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Mapping\\LocacaoProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T22:28:52.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ServicoLocacao.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Aplicacao\\ModuloLocacao\\ServicoLocacao.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Aplicacao\\ModuloLocacao\\ServicoLocacao.cs",
               "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Aplicacao\\ModuloLocacao\\ServicoLocacao.cs",
               "RelativeToolTip": "LocadoraDeVeiculos.Aplicacao\\ModuloLocacao\\ServicoLocacao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAQwIwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T21:03:03.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LocadoraDeVeiculos.Aplicacao",
-              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj",
-              "RelativeDocumentMoniker": "LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj",
-              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj",
-              "RelativeToolTip": "LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-02T21:02:43.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
               "Title": "RepositorioLocacaoEmOrmTests.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Testes.Integracao\\ModuloLocacao\\RepositorioLocacaoEmOrmTests.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Testes.Integracao\\ModuloLocacao\\RepositorioLocacaoEmOrmTests.cs",
@@ -169,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "LocadoraDeVeiculos.Testes.Integracao",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Testes.Integracao\\LocadoraDeVeiculos.Testes.Integracao.csproj",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Testes.Integracao\\LocadoraDeVeiculos.Testes.Integracao.csproj",
@@ -182,20 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RepositorioEmOrmTestsBase.cs",
-              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Testes.Integracao\\Compartilhado\\RepositorioEmOrmTestsBase.cs",
-              "RelativeDocumentMoniker": "LocadoraDeVeiculos.Testes.Integracao\\Compartilhado\\RepositorioEmOrmTestsBase.cs",
-              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Testes.Integracao\\Compartilhado\\RepositorioEmOrmTestsBase.cs",
-              "RelativeToolTip": "LocadoraDeVeiculos.Testes.Integracao\\Compartilhado\\RepositorioEmOrmTestsBase.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwDcAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T20:27:20.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
               "Title": "IRepositorioConfiguracaoCombustivel.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloCombustivel\\IRepositorioConfiguracaoCombustivel.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Dominio\\ModuloCombustivel\\IRepositorioConfiguracaoCombustivel.cs",
@@ -208,7 +386,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
+              "Title": "Locacao.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloLocacao\\Locacao.cs",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.Dominio\\ModuloLocacao\\Locacao.cs",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloLocacao\\Locacao.cs",
+              "RelativeToolTip": "LocadoraDeVeiculos.Dominio\\ModuloLocacao\\Locacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T17:13:50.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LocadoraDeVeiculos.Aplicacao",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj",
+              "RelativeToolTip": "LocadoraDeVeiculos.Aplicacao\\LocadoraDeVeiculos.Aplicacao.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-02T21:02:43.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Program.cs",
+              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T20:22:58.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RepositorioConfiguracaoCombustivelEmOrm.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\RepositorioConfiguracaoCombustivelEmOrm.cs",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\RepositorioConfiguracaoCombustivelEmOrm.cs",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\RepositorioConfiguracaoCombustivelEmOrm.cs",
+              "RelativeToolTip": "LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\RepositorioConfiguracaoCombustivelEmOrm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T19:28:10.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RepositorioEmOrmTestsBase.cs",
+              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Testes.Integracao\\Compartilhado\\RepositorioEmOrmTestsBase.cs",
+              "RelativeDocumentMoniker": "LocadoraDeVeiculos.Testes.Integracao\\Compartilhado\\RepositorioEmOrmTestsBase.cs",
+              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Testes.Integracao\\Compartilhado\\RepositorioEmOrmTestsBase.cs",
+              "RelativeToolTip": "LocadoraDeVeiculos.Testes.Integracao\\Compartilhado\\RepositorioEmOrmTestsBase.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDcAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T20:27:20.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "IRepositorioLocacao.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloLocacao\\IRepositorioLocacao.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Dominio\\ModuloLocacao\\IRepositorioLocacao.cs",
@@ -221,33 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Locacao.cs",
-              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloLocacao\\Locacao.cs",
-              "RelativeDocumentMoniker": "LocadoraDeVeiculos.Dominio\\ModuloLocacao\\Locacao.cs",
-              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloLocacao\\Locacao.cs",
-              "RelativeToolTip": "LocadoraDeVeiculos.Dominio\\ModuloLocacao\\Locacao.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAzwAIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T17:13:50.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Program.cs",
-              "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Program.cs",
-              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Program.cs",
-              "RelativeToolTip": "LocadoraDeVeiculos.WebApp\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADAAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T20:22:58.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 23,
               "Title": "Configurar.cshtml",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Views\\Combustivel\\Configurar.cshtml",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Views\\Combustivel\\Configurar.cshtml",
@@ -260,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 25,
               "Title": "ConfiguracaoCombustivelProfile.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Mapping\\ConfiguracaoCombustivelProfile.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Mapping\\ConfiguracaoCombustivelProfile.cs",
@@ -273,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "FormularioConfiguracaoCombustivelViewModel.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Models\\FormularioConfiguracaoCombustivelViewModel.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Models\\FormularioConfiguracaoCombustivelViewModel.cs",
@@ -286,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "CombustivelController.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.WebApp\\Controllers\\CombustivelController.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.WebApp\\Controllers\\CombustivelController.cs",
@@ -299,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "20240902200814_Add ConfiguracaoCombustivel.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\Migrations\\20240902200814_Add ConfiguracaoCombustivel.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Infra.Orm\\Migrations\\20240902200814_Add ConfiguracaoCombustivel.cs",
@@ -312,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "ServicoCombustivel.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Aplicacao\\ModuloCombustivel\\ServicoCombustivel.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Aplicacao\\ModuloCombustivel\\ServicoCombustivel.cs",
@@ -325,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
               "Title": "ConfiguracaoCombustivel.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloCombustivel\\ConfiguracaoCombustivel.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Dominio\\ModuloCombustivel\\ConfiguracaoCombustivel.cs",
@@ -338,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 30,
               "Title": "LocadoraDbContext.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\Compartilhado\\LocadoraDbContext.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Infra.Orm\\Compartilhado\\LocadoraDbContext.cs",
@@ -351,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 29,
               "Title": "MapeadorConfiguracaoCombustivel.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\MapeadorConfiguracaoCombustivel.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\MapeadorConfiguracaoCombustivel.cs",
@@ -364,20 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RepositorioConfiguracaoConfiguracaoCombustivelEmOrm.cs",
-              "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\RepositorioConfiguracaoConfiguracaoCombustivelEmOrm.cs",
-              "RelativeDocumentMoniker": "LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\RepositorioConfiguracaoConfiguracaoCombustivelEmOrm.cs",
-              "ToolTip": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\RepositorioConfiguracaoConfiguracaoCombustivelEmOrm.cs",
-              "RelativeToolTip": "LocadoraDeVeiculos.Infra.Orm\\ModuloCombustivel\\RepositorioConfiguracaoConfiguracaoCombustivelEmOrm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T19:28:10.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "TipoCombustivelEnum.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloVeiculo\\TipoCombustivelEnum.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Dominio\\ModuloVeiculo\\TipoCombustivelEnum.cs",
@@ -390,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 33,
               "Title": "MapeadorLocacao.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\ModuloLocacao\\MapeadorLocacao.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Infra.Orm\\ModuloLocacao\\MapeadorLocacao.cs",
@@ -403,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 32,
               "Title": "RepositorioLocacaoEmOrm.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\ModuloLocacao\\RepositorioLocacaoEmOrm.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Infra.Orm\\ModuloLocacao\\RepositorioLocacaoEmOrm.cs",
@@ -416,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 35,
               "Title": "Taxa.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloTaxa\\Taxa.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Dominio\\ModuloTaxa\\Taxa.cs",
@@ -429,7 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 34,
               "Title": "LocadoraDeVeiculos.Infra.Orm",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Infra.Orm\\LocadoraDeVeiculos.Infra.Orm.csproj",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Infra.Orm\\LocadoraDeVeiculos.Infra.Orm.csproj",
@@ -442,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 37,
               "Title": "VeiculoTests.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Testes.Unidade\\ModuloVeiculo\\VeiculoTests.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Testes.Unidade\\ModuloVeiculo\\VeiculoTests.cs",
@@ -455,7 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 36,
               "Title": "LocacaoTests.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Testes.Unidade\\ModuloLocacao\\LocacaoTests.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Testes.Unidade\\ModuloLocacao\\LocacaoTests.cs",
@@ -468,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 39,
               "Title": "LocadoraDeVeiculos.Testes.Unidade",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Testes.Unidade\\LocadoraDeVeiculos.Testes.Unidade.csproj",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Testes.Unidade\\LocadoraDeVeiculos.Testes.Unidade.csproj",
@@ -481,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 38,
               "Title": "Veiculo.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloVeiculo\\Veiculo.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Dominio\\ModuloVeiculo\\Veiculo.cs",
@@ -494,7 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 40,
               "Title": "TipoPlanoCobrancaEnum.cs",
               "DocumentMoniker": "C:\\Users\\jerem\\OneDrive\\Documentos\\DevSistemas\\Trabalho06\\LocadoraDeVeiculos.Dominio\\ModuloLocacao\\TipoPlanoCobrancaEnum.cs",
               "RelativeDocumentMoniker": "LocadoraDeVeiculos.Dominio\\ModuloLocacao\\TipoPlanoCobrancaEnum.cs",

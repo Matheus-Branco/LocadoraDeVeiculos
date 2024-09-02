@@ -4,7 +4,7 @@ using LocadoraDeVeiculos.Dominio.ModuloCondutor;
 using LocadoraDeVeiculos.Dominio.ModuloTaxa;
 using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
 
-namespace LocadoraDeVeiculos.Dominio.ModuloAluguel
+namespace LocadoraDeVeiculos.Dominio.ModuloLocacao
 {
     public class Locacao : EntidadeBase
     {

@@ -1,5 +1,5 @@
 ﻿using FizzWare.NBuilder;
-using LocadoraDeVeiculos.Dominio.ModuloAluguel;
+using LocadoraDeVeiculos.Dominio.ModuloLocacao;
 using LocadoraDeVeiculos.Dominio.ModuloCliente;
 using LocadoraDeVeiculos.Dominio.ModuloCombustivel;
 using LocadoraDeVeiculos.Dominio.ModuloCondutor;
@@ -24,7 +24,7 @@ namespace LocadoraDeVeiculos.Testes.Integracao.Compartilhado
         protected LocadoraDbContext dbContext;
 
         protected RepositorioLocacaoEmOrm repositorioLocacao;
-        protected RepositorioConfiguracaoConfiguracaoCombustivelEmOrm RepositorioConfiguracaoConfiguracao;
+        protected RepositorioConfiguracaoCombustivelEmOrm RepositorioConfiguracao;
         protected RepositorioTaxaEmOrm repositorioTaxa;
         protected RepositorioClienteEmOrm repositorioCliente;
         protected RepositorioCondutorEmOrm repositorioCondutor;
@@ -51,10 +51,10 @@ namespace LocadoraDeVeiculos.Testes.Integracao.Compartilhado
             repositorioVeiculo = new RepositorioVeiculoEmOrm(dbContext);
             repositorioGrupo = new RepositorioGrupoVeiculosEmOrm(dbContext);
             repositorioLocacao = new RepositorioLocacaoEmOrm(dbContext);
-            RepositorioConfiguracaoConfiguracao = new RepositorioConfiguracaoConfiguracaoCombustivelEmOrm(dbContext);
+            RepositorioConfiguracao = new RepositorioConfiguracaoCombustivelEmOrm(dbContext);
 
             BuilderSetup.SetCreatePersistenceMethod<Locacao>(repositorioLocacao.Inserir);
-            BuilderSetup.SetCreatePersistenceMethod<ConfiguracaoCombustivel>(RepositorioConfiguracaoConfiguracao.GravarConfiguracao);
+            BuilderSetup.SetCreatePersistenceMethod<ConfiguracaoCombustivel>(RepositorioConfiguracao.GravarConfiguracao);
             BuilderSetup.SetCreatePersistenceMethod<Taxa>(repositorioTaxa.Inserir);
             BuilderSetup.SetCreatePersistenceMethod<PlanoCobranca>(repositorioPlano.Inserir);
             BuilderSetup.SetCreatePersistenceMethod<Cliente>(repositorioCliente.Inserir);
