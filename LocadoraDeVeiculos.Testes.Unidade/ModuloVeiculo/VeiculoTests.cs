@@ -12,7 +12,7 @@ public class VeiculoTests
     {
         var grupo = new GrupoVeiculos("SUV");
 
-        var veiculo = new Veiculo("Modelo A", "Marca B", TipoCombustivel.Gasolina, 50, true, 1);
+        var veiculo = new Veiculo("Modelo A", "Marca B", TipoCombustivelEnum.Gasolina, 50, 1);
 
         var erros = veiculo.Validar();
 
@@ -26,9 +26,8 @@ public class VeiculoTests
             (
             "",
             "",
-            TipoCombustivel.Gasolina,
+            TipoCombustivelEnum.Gasolina,
             0,
-            false,
             0
             );
 

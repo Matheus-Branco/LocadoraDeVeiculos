@@ -3,25 +3,27 @@ using LocadoraDeVeiculos.Dominio.ModuloCombustivel;
 
 namespace LocadoraDeVeiculos.Aplicacao.ModuloCombustivel
 {
-    public class ServicoConfiguracaoCombustivel
+    public class ServicoCombustivel
     {
         private readonly IRepositorioConfiguracaoCombustivel repositorioconfig;
 
-        public ServicoConfiguracaoCombustivel(IRepositorioConfiguracaoCombustivel repositorioconfig)
+        public ServicoCombustivel(IRepositorioConfiguracaoCombustivel repositorioconfig)
         {
             this.repositorioconfig = repositorioconfig;
         }
 
-        public async Task<Result> SalvarConfiguracaoAsync(ConfiguracaoCombustivel configuracao)
+        public Result SalvarConfiguracao(ConfiguracaoCombustivel configuracao)
         {
-            await repositorioconfig.GravarConfiguracaoAsync(configuracao);
+            configuracao.DataCriacao = DateTime.Now;
+
+            repositorioconfig.GravarConfiguracao(configuracao);
 
             return Result.Ok();
         }
 
-        public async Task<Result<ConfiguracaoCombustivel>> ObterConfiguracaoAsync()
+        public Result<ConfiguracaoCombustivel> ObterConfiguracao()
         {
-            var config = await repositorioconfig.ObterConfiguracaoAsync();
+            var config = repositorioconfig.ObterConfiguracao();
 
             if (config is null)
             {

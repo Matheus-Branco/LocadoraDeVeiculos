@@ -23,7 +23,7 @@ public class MapeadorVeiculo : IEntityTypeConfiguration<Veiculo>
             .HasColumnType("varchar(100)")
             .IsRequired();
 
-        builder.Property(v => v.TipoCombustivel)
+        builder.Property(v => v.TipoCombustivelEnum)
             .HasColumnType("int")
             .IsRequired();
 

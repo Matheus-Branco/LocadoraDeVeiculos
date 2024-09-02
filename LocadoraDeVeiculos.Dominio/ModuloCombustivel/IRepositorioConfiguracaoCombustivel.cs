@@ -2,7 +2,7 @@
 {
     public interface IRepositorioConfiguracaoCombustivel
     {
-        Task GravarConfiguracaoAsync(ConfiguracaoCombustivel configuracao);
-        Task<ConfiguracaoCombustivel?> ObterConfiguracaoAsync();
+        void GravarConfiguracao(ConfiguracaoCombustivel configuracaoCombustivel);
+        ConfiguracaoCombustivel? ObterConfiguracao();
     }
 }

@@ -7,24 +7,23 @@ public class Veiculo : EntidadeBase
 {
     public string Modelo { get; set; }
     public string Marca { get; set; }
-    public TipoCombustivel TipoCombustivel { get; set; }
+    public TipoCombustivelEnum TipoCombustivelEnum { get; set; }
     public int CapacidadeTanque {  get; set; }
     public byte[] Foto { get; set; }
-    public bool Disponivel { get; set; }
 
     public int GrupoVeiculosId {  get; set; }
     public GrupoVeiculos? GrupoVeiculos { get; set; }
-    
+
+    public bool Alugado { get; set; }
 
     protected Veiculo() { }
 
-    public Veiculo(string modelo, string marca, TipoCombustivel tipoCombustivel, int capacidadeTanque, bool disponivel,int grupoVeiculosId)
+    public Veiculo(string modelo, string marca, TipoCombustivelEnum tipoCombustivelEnum, int capacidadeTanque, int grupoVeiculosId)
     {
         Modelo = modelo;
         Marca = marca;
-        TipoCombustivel = tipoCombustivel;
+        TipoCombustivelEnum = tipoCombustivelEnum;
         CapacidadeTanque = capacidadeTanque;
-        Disponivel = disponivel;
         GrupoVeiculosId = grupoVeiculosId;
     }
 
@@ -44,9 +43,17 @@ public class Veiculo : EntidadeBase
         if (GrupoVeiculosId == 0)
             erros.Add("O grupo de veiculos é obrigatório");
 
-        if (Disponivel is false)
-            erros.Add("O veículo não está disponível");
 
         return erros;
+    }
+
+    public void Alugar()
+    {
+        Alugado = true;
+    }
+
+    public void Desocupar()
+    {
+        Alugado = false;
     }
 }

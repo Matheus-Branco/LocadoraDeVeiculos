@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LocadoraDeVeiculos.Dominio.Compartilhado;
+﻿using LocadoraDeVeiculos.Dominio.Compartilhado;
+using LocadoraDeVeiculos.Dominio.ModuloAluguel;
 
 namespace LocadoraDeVeiculos.Dominio.ModuloTaxa
 {
@@ -12,6 +8,13 @@ namespace LocadoraDeVeiculos.Dominio.ModuloTaxa
         public string Nome { get; set; }
         public decimal Valor { get; set; }
         public TipoCobrancaEnum TipoCobranca { get; set; }
+        public IEnumerable<Locacao>? Locacoes { get; set; }
+
+        protected Taxa()
+        {
+            Locacoes = new List<Locacao>();
+        }
+
         public Taxa(string nome, decimal valor, TipoCobrancaEnum tipoCobranca)
         {
             Nome = nome;

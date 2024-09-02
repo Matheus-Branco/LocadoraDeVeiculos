@@ -9,6 +9,8 @@ namespace LocadoraDeVeiculos.Dominio.ModuloCombustivel
         public decimal ValorDiesel { get; set; }
         public decimal ValorGas { get; set; }
         public decimal ValorGasolina { get; set; }
+        public DateTime DataCriacao { get; set; }
+        public int Id { get; set; }
 
         public ConfiguracaoCombustivel(){}
 

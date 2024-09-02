@@ -30,7 +30,7 @@ public class ServicoVeiculo
 
         veiculo.Modelo  = veiculoAtualizado.Modelo;
         veiculo.Marca = veiculoAtualizado.Marca;
-        veiculo.TipoCombustivel = veiculoAtualizado.TipoCombustivel;
+        veiculo.TipoCombustivelEnum = veiculoAtualizado.TipoCombustivelEnum;
         veiculo.CapacidadeTanque = veiculoAtualizado.CapacidadeTanque;
         veiculo.GrupoVeiculosId = veiculoAtualizado.GrupoVeiculosId;
 

@@ -1,14 +1,12 @@
 ﻿using System.Reflection;
 using LocadoraDeVeiculos.Dominio.ModuloAluguel;
 using LocadoraDeVeiculos.Dominio.ModuloCliente;
+using LocadoraDeVeiculos.Dominio.ModuloCombustivel;
 using LocadoraDeVeiculos.Dominio.ModuloCondutor;
 using LocadoraDeVeiculos.Dominio.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Dominio.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Dominio.ModuloTaxa;
 using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
-using LocadoraDeVeiculos.Infra.Orm.ModuloGrupoVeiculos;
-using LocadoraDeVeiculos.Infra.Orm.ModuloVeiculo;
-using LocadoraDeVeiculos.Infra.Orm.ModuloPlanoCobranca;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -22,7 +20,8 @@ namespace LocadoraDeVeiculos.Infra.Orm.Compartilhado
 		public DbSet<Taxa> Taxas { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Condutor> Condutores { get; set; }
-        public DbSet<Aluguel> Alugueis { get; set; }
+        public DbSet<ConfiguracaoCombustivel> ConfiguracoesCombustiveis { get; set; }
+        public DbSet<Locacao> Locacoes { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{

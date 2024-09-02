@@ -1,36 +1,43 @@
-﻿using LocadoraDeVeiculos.Aplicacao.ModuloCombustivel;
+﻿using AutoMapper;
+using LocadoraDeVeiculos.Aplicacao.ModuloCombustivel;
 using LocadoraDeVeiculos.Dominio.ModuloCombustivel;
 using LocadoraDeVeiculos.WebApp.Controllers.Compartilhado;
+using LocadoraDeVeiculos.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LocadoraDeVeiculos.WebApp.Controllers
 {
-    public class CombustivelController : WebControllerBase
+    public class CombustivelController :WebControllerBase
     {
-        private readonly ServicoConfiguracaoCombustivel servicoCombustivel;
+        private readonly ServicoCombustivel servicoCombustivel;
+        private readonly IMapper mapeador;
 
-        public CombustivelController(ServicoConfiguracaoCombustivel servicoCombustivel)
+        public CombustivelController(ServicoCombustivel servicoCombustivel, IMapper mapeador)
         {
             this.servicoCombustivel = servicoCombustivel;
+            this.mapeador = mapeador;
         }
 
-        public async Task<IActionResult> Configurar()
+        public IActionResult Configurar()
         {
-            var resultado =
-                await servicoCombustivel.ObterConfiguracaoAsync();
+            var resultado = servicoCombustivel.ObterConfiguracao();
 
             if (resultado.IsFailed)
                 return RedirectToAction("Index", "Home");
 
-            ConfiguracaoCombustivel configuracaoCombustivel = resultado.Value;
+            var configuracaoCombustivel = resultado.Value;
 
-            return View(configuracaoCombustivel);
+            var formularioVm = mapeador.Map<FormularioConfiguracaoCombustivelViewModel>(configuracaoCombustivel);
+
+            return View(formularioVm);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Configurar(ConfiguracaoCombustivel config)
+        public IActionResult Configurar(FormularioConfiguracaoCombustivelViewModel formularioVm)
         {
-            var resultado = await servicoCombustivel.SalvarConfiguracaoAsync(config);
+            var config = mapeador.Map<ConfiguracaoCombustivel>(formularioVm);
+
+            var resultado = servicoCombustivel.SalvarConfiguracao(config);
 
             if(resultado.IsFailed)
                 return RedirectToAction("Index", "Home");
