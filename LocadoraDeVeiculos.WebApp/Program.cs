@@ -2,6 +2,7 @@ using LocadoraDeVeiculos.Infra.Orm.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Dominio.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Infra.Orm.Compartilhado;
 using System.Reflection;
+using LocadoraDeVeiculos.Aplicacao.ModuloAutenticacao;
 using LocadoraDeVeiculos.Aplicacao.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Aplicacao.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Aplicacao.ModuloTaxa;
@@ -54,8 +55,17 @@ namespace LocadoraDeVeiculos.WebApp
 
             builder.Services.AddScoped<FotoValueResolver>();
 			builder.Services.AddScoped<GrupoVeiculosResolver>();
+			builder.Services.AddScoped<TaxasSelecionadasValueResolver>();
 
-			builder.Services.AddAutoMapper(cfg =>
+            builder.Services.AddScoped<TaxasValueResolver>();
+            builder.Services.AddScoped<CondutoresValueResolver>();
+            builder.Services.AddScoped<VeiculosValueResolver>();
+            builder.Services.AddScoped<ValorParcialValueResolver>();
+            builder.Services.AddScoped<ValorTotalValueResolver>();
+
+            builder.Services.AddScoped<ServicoAutenticacao>();
+
+            builder.Services.AddAutoMapper(cfg =>
 			{
 				cfg.AddMaps(Assembly.GetExecutingAssembly());
 			});

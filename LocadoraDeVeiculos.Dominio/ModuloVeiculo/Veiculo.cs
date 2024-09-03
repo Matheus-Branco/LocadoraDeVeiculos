@@ -1,5 +1,6 @@
 ﻿using LocadoraDeVeiculos.Dominio.Compartilhado;
 using LocadoraDeVeiculos.Dominio.ModuloGrupoVeiculos;
+using LocadoraDeVeiculos.Dominio.ModuloLocacao;
 
 namespace LocadoraDeVeiculos.Dominio.ModuloVeiculo;
 
@@ -7,7 +8,7 @@ public class Veiculo : EntidadeBase
 {
     public string Modelo { get; set; }
     public string Marca { get; set; }
-    public TipoCombustivelEnum TipoCombustivelEnum { get; set; }
+    public TipoCombustivelEnum TipoCombustivel { get; set; }
     public int CapacidadeTanque {  get; set; }
     public byte[] Foto { get; set; }
 
@@ -18,11 +19,11 @@ public class Veiculo : EntidadeBase
 
     protected Veiculo() { }
 
-    public Veiculo(string modelo, string marca, TipoCombustivelEnum tipoCombustivelEnum, int capacidadeTanque, int grupoVeiculosId)
+    public Veiculo(string modelo, string marca, TipoCombustivelEnum tipoCombustivel, int capacidadeTanque, int grupoVeiculosId)
     {
         Modelo = modelo;
         Marca = marca;
-        TipoCombustivelEnum = tipoCombustivelEnum;
+        TipoCombustivel = tipoCombustivel;
         CapacidadeTanque = capacidadeTanque;
         GrupoVeiculosId = grupoVeiculosId;
     }
@@ -55,5 +56,22 @@ public class Veiculo : EntidadeBase
     public void Desocupar()
     {
         Alugado = false;
+    }
+
+    public decimal CalcularLitrosParaAbastecimento(MarcadorCombustivelEnum marcadorCombustivel)
+    {
+        switch (marcadorCombustivel)
+        {
+            case MarcadorCombustivelEnum.Vazio: return CapacidadeTanque;
+
+            case MarcadorCombustivelEnum.UmQuarto: return (CapacidadeTanque - (CapacidadeTanque * 1 / 4));
+
+            case MarcadorCombustivelEnum.MeioTanque: return (CapacidadeTanque - (CapacidadeTanque * 1 / 2));
+
+            case MarcadorCombustivelEnum.TresQuartos: return (CapacidadeTanque - (CapacidadeTanque * 3 / 4));
+
+            default:
+                return 0;
+        }
     }
 }

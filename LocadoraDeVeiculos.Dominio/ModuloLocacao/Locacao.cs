@@ -1,6 +1,7 @@
 ﻿using LocadoraDeVeiculos.Dominio.Compartilhado;
 using LocadoraDeVeiculos.Dominio.ModuloCombustivel;
 using LocadoraDeVeiculos.Dominio.ModuloCondutor;
+using LocadoraDeVeiculos.Dominio.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Dominio.ModuloTaxa;
 using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
 
@@ -96,6 +97,57 @@ namespace LocadoraDeVeiculos.Dominio.ModuloLocacao
                 erros.Add("A data prevista da entrega não pode ser menor que data da locação");
 
             return erros;
+        }
+
+        public decimal CalcularValorParcial(PlanoCobranca planoSelecionado)
+        {
+            var quatidadeDiasPercorridos = ObterQuantidadeDeDiasPercorridos();
+
+            decimal valorPlano = planoSelecionado.CalcularValor(
+                quatidadeDiasPercorridos,
+                QuilometragemPercorrida,
+                TipoPlano
+            );
+
+            decimal valorTaxas = 0;
+
+            if (TaxasSelecionadas.Count > 0)
+                valorTaxas = TaxasSelecionadas.Sum(tx => tx.CalcularValor(quatidadeDiasPercorridos));
+
+            return valorPlano + valorTaxas;
+        }
+
+        public decimal CalcularValorTotal(PlanoCobranca planoCobranca)
+        {
+            var valorParcial = CalcularValorParcial(planoCobranca);
+
+            decimal totalAbastecimento = 0;
+
+            if (Veiculo is not null && ConfiguracaoCombustivel is not null)
+            {
+                var valorCombustivel = ConfiguracaoCombustivel.ObterValorCombustivel(Veiculo.TipoCombustivel);
+
+                totalAbastecimento = Veiculo.CalcularLitrosParaAbastecimento(MarcadorCombustivel) * valorCombustivel;
+            }
+
+            decimal valorTotal = valorParcial + totalAbastecimento;
+
+            if (TemMulta())
+                valorTotal += valorParcial * (10m / 100m);
+
+            return valorTotal;
+        }
+
+        private int ObterQuantidadeDeDiasPercorridos()
+        {
+            int qtdDiasLocacao;
+
+            if (DataDevolucao is null)
+                qtdDiasLocacao = (DevolucaoPrevista.Date - DataLocacao.Date).Days;
+            else
+                qtdDiasLocacao = (DataDevolucao - DataLocacao).Value.Days;
+
+            return qtdDiasLocacao;
         }
     }
 }

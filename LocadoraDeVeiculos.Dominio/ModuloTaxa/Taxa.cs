@@ -33,5 +33,18 @@ namespace LocadoraDeVeiculos.Dominio.ModuloTaxa
 
             return erros;
         }
+
+        public override string ToString()
+        {
+            return $"{Valor.ToString("C2")}\t{Nome}\t({TipoCobranca.ToString()})";
+        }
+
+        public decimal CalcularValor(int quantidadeDeDias)
+        {
+            if (TipoCobranca == TipoCobrancaEnum.Diaria)
+                return Valor * quantidadeDeDias;
+
+            return Valor;
+        }
     }
 }
