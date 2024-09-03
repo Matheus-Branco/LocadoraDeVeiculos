@@ -20,10 +20,15 @@ using LocadoraDeVeiculos.Aplicacao.ModuloCliente;
 using LocadoraDeVeiculos.Aplicacao.ModuloCombustivel;
 using LocadoraDeVeiculos.Aplicacao.ModuloCondutor;
 using LocadoraDeVeiculos.Aplicacao.ModuloLocacao;
+using LocadoraDeVeiculos.Dominio.ModuloAutenticacao;
 using LocadoraDeVeiculos.Dominio.ModuloCombustivel;
 using LocadoraDeVeiculos.Dominio.ModuloCondutor;
+using LocadoraDeVeiculos.Dominio.ModuloLocacao;
 using LocadoraDeVeiculos.Infra.Orm.ModuloCombustivel;
 using LocadoraDeVeiculos.Infra.Orm.ModuloCondutor;
+using LocadoraDeVeiculos.Infra.Orm.ModuloLocacao;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 
 namespace LocadoraDeVeiculos.WebApp
 {
@@ -42,7 +47,7 @@ namespace LocadoraDeVeiculos.WebApp
             builder.Services.AddScoped<IRepositorioCliente, RepositorioClienteEmOrm>();
             builder.Services.AddScoped<IRepositorioCondutor, RepositorioCondutorEmOrm>();
             builder.Services.AddScoped<IRepositorioConfiguracaoCombustivel, RepositorioConfiguracaoCombustivelEmOrm>();
-            builder.Services.AddScoped<IRepositorioConfiguracaoCombustivel, RepositorioConfiguracaoCombustivelEmOrm>();
+            builder.Services.AddScoped<IRepositorioLocacao, RepositorioLocacaoEmOrm>();
 
             builder.Services.AddScoped<ServicoGrupoVeiculos>();
 			builder.Services.AddScoped<ServicoVeiculo>();
@@ -63,14 +68,43 @@ namespace LocadoraDeVeiculos.WebApp
             builder.Services.AddScoped<ValorParcialValueResolver>();
             builder.Services.AddScoped<ValorTotalValueResolver>();
 
-            builder.Services.AddScoped<ServicoAutenticacao>();
 
             builder.Services.AddAutoMapper(cfg =>
 			{
 				cfg.AddMaps(Assembly.GetExecutingAssembly());
 			});
 
-			builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<ServicoAutenticacao>();
+
+            builder.Services.AddIdentity<Usuario, Perfil>()
+                .AddEntityFrameworkStores<LocadoraDbContext>()
+                .AddDefaultTokenProviders();
+
+            builder.Services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 3;
+                options.Password.RequiredUniqueChars = 1;
+            });
+
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.Cookie.Name = "AspNetCore.Cookies";
+                    options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+                    options.SlidingExpiration = true;
+                });
+
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Autenticacao/Login";
+                options.AccessDeniedPath = "/Autenticacao/AcessoNegado";
+            });
+
+            builder.Services.AddControllersWithViews();
 
 			var app = builder.Build();
 

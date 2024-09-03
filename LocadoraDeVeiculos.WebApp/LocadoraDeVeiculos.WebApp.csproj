@@ -55,6 +55,7 @@
   <ItemGroup>
     <Folder Include="Views\Cliente\" />
     <Folder Include="Views\Combustivel\" />
+    <Folder Include="Views\Autenticacao\" />
     <Folder Include="Views\Taxa\" />
   </ItemGroup>
 
