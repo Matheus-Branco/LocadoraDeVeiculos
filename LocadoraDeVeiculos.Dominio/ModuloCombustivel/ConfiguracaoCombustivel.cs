@@ -1,4 +1,5 @@
 ﻿using LocadoraDeVeiculos.Dominio.Compartilhado;
+using LocadoraDeVeiculos.Dominio.ModuloAutenticacao;
 using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
 
 namespace LocadoraDeVeiculos.Dominio.ModuloCombustivel
@@ -9,8 +10,12 @@ namespace LocadoraDeVeiculos.Dominio.ModuloCombustivel
         public decimal ValorDiesel { get; set; }
         public decimal ValorGas { get; set; }
         public decimal ValorGasolina { get; set; }
+
         public DateTime DataCriacao { get; set; }
         public int Id { get; set; }
+
+        public int EmpresaId { get; set; }
+        public Usuario? Empresa { get; set; }
 
         public ConfiguracaoCombustivel(){}
 

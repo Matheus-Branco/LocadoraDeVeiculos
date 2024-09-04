@@ -60,9 +60,9 @@ namespace LocadoraDeVeiculos.Aplicacao.ModuloPlanoCobranca
 
             return Result.Ok(planoCobranca);
         }
-        public Result<List<PlanoCobranca>> SelecionarTodos()
+        public Result<List<PlanoCobranca>> SelecionarTodos(int empresaId)
         {
-            var planosCobranca = repositorioPlanoCobranca.SelecionarTodos();
+            var planosCobranca = repositorioPlanoCobranca.Filtrar(p => p.EmpresaId == empresaId);
 
             return Result.Ok(planosCobranca);
         }

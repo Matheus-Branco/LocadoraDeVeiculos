@@ -19,13 +19,16 @@ using LocadoraDeVeiculos.Infra.Orm.ModuloCliente;
 using LocadoraDeVeiculos.Aplicacao.ModuloCliente;
 using LocadoraDeVeiculos.Aplicacao.ModuloCombustivel;
 using LocadoraDeVeiculos.Aplicacao.ModuloCondutor;
+using LocadoraDeVeiculos.Aplicacao.ModuloFuncionario;
 using LocadoraDeVeiculos.Aplicacao.ModuloLocacao;
 using LocadoraDeVeiculos.Dominio.ModuloAutenticacao;
 using LocadoraDeVeiculos.Dominio.ModuloCombustivel;
 using LocadoraDeVeiculos.Dominio.ModuloCondutor;
+using LocadoraDeVeiculos.Dominio.ModuloFuncionario;
 using LocadoraDeVeiculos.Dominio.ModuloLocacao;
 using LocadoraDeVeiculos.Infra.Orm.ModuloCombustivel;
 using LocadoraDeVeiculos.Infra.Orm.ModuloCondutor;
+using LocadoraDeVeiculos.Infra.Orm.ModuloFuncionario;
 using LocadoraDeVeiculos.Infra.Orm.ModuloLocacao;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
@@ -48,6 +51,8 @@ namespace LocadoraDeVeiculos.WebApp
             builder.Services.AddScoped<IRepositorioCondutor, RepositorioCondutorEmOrm>();
             builder.Services.AddScoped<IRepositorioConfiguracaoCombustivel, RepositorioConfiguracaoCombustivelEmOrm>();
             builder.Services.AddScoped<IRepositorioLocacao, RepositorioLocacaoEmOrm>();
+            builder.Services.AddScoped<IRepositorioFuncionario, RepositorioFuncionarioEmOrm>();
+
 
             builder.Services.AddScoped<ServicoGrupoVeiculos>();
 			builder.Services.AddScoped<ServicoVeiculo>();
@@ -57,6 +62,8 @@ namespace LocadoraDeVeiculos.WebApp
             builder.Services.AddScoped<ServicoCondutor>();
             builder.Services.AddScoped<ServicoCombustivel>();
             builder.Services.AddScoped<ServicoLocacao>();
+            builder.Services.AddScoped<ServicoFuncionario>();
+
 
             builder.Services.AddScoped<FotoValueResolver>();
 			builder.Services.AddScoped<GrupoVeiculosResolver>();
@@ -67,6 +74,7 @@ namespace LocadoraDeVeiculos.WebApp
             builder.Services.AddScoped<VeiculosValueResolver>();
             builder.Services.AddScoped<ValorParcialValueResolver>();
             builder.Services.AddScoped<ValorTotalValueResolver>();
+            builder.Services.AddScoped<EmpresaIdValueResolver>();
 
 
             builder.Services.AddAutoMapper(cfg =>

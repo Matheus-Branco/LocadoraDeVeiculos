@@ -19,7 +19,7 @@ namespace LocadoraDeVeiculos.Infra.Orm.ModuloCombustivel
             dbContext.SaveChanges();
         }
 
-        public ConfiguracaoCombustivel? ObterConfiguracao()
+        public ConfiguracaoCombustivel? ObterConfiguracao(int idEmpresa)
         {
             return dbContext.ConfiguracoesCombustiveis
                 .OrderByDescending(c => c.Id)

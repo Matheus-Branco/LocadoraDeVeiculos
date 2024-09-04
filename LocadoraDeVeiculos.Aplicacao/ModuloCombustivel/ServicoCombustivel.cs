@@ -21,9 +21,9 @@ namespace LocadoraDeVeiculos.Aplicacao.ModuloCombustivel
             return Result.Ok();
         }
 
-        public Result<ConfiguracaoCombustivel> ObterConfiguracao()
+        public Result<ConfiguracaoCombustivel> ObterConfiguracao(int idEmpresa)
         {
-            var config = repositorioconfig.ObterConfiguracao();
+            var config = repositorioconfig.ObterConfiguracao(idEmpresa);
 
             if (config is null)
             {

@@ -10,7 +10,8 @@ namespace LocadoraDeVeiculos.WebApp.Mapping
         public LocacaoProfile()
         {
             CreateMap<InserirLocacaoViewModel, Locacao>()
-                .ForMember(l => l.TaxasSelecionadas, opt => opt.MapFrom<TaxasSelecionadasValueResolver>());
+                .ForMember(l => l.TaxasSelecionadas, opt => opt.MapFrom<TaxasSelecionadasValueResolver>())
+                .ForMember(dest => dest.EmpresaId, opt => opt.MapFrom<EmpresaIdValueResolver>()); ;
 
             CreateMap<RealizarDevolucaoViewModel, Locacao>()
                 .ForMember(l => l.TaxasSelecionadas, opt => opt.MapFrom<TaxasSelecionadasValueResolver>());

@@ -28,7 +28,7 @@ namespace LocadoraDeVeiculos.WebApp.Mapping.Resolvers
             }
 
             return _servicoVeiculo
-                .SelecionarTodos()
+                .SelecionarTodos(source.EmpresaId)
                 .Value
                 .Select(v => new SelectListItem(v.Modelo, v.Id.ToString()));
         }

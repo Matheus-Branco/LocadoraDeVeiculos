@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LocadoraDeVeiculos.Aplicacao.ModuloAutenticacao;
 using LocadoraDeVeiculos.Aplicacao.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Aplicacao.ModuloPlanoCobranca;
 using LocadoraDeVeiculos.Dominio.ModuloPlanoCobranca;
@@ -15,7 +16,11 @@ namespace LocadoraDeVeiculos.WebApp.Controllers
         private readonly ServicoGrupoVeiculos servicoGrupos;
         private readonly IMapper mapeador;
 
-        public PlanoCobrancaController(ServicoPlanoCobranca servico, ServicoGrupoVeiculos servicoGrupos, IMapper mapeador)
+        public PlanoCobrancaController(
+            ServicoAutenticacao servicoAuth,
+            ServicoPlanoCobranca servico, 
+            ServicoGrupoVeiculos servicoGrupos, 
+            IMapper mapeador) : base(servicoAuth)
         {
             this.servico = servico;
             this.servicoGrupos = servicoGrupos;
@@ -24,7 +29,7 @@ namespace LocadoraDeVeiculos.WebApp.Controllers
 
         public IActionResult Listar()
         {
-            var resultado = servico.SelecionarTodos();
+            var resultado = servico.SelecionarTodos(EmpresaId.GetValueOrDefault());
 
             if (resultado.IsFailed)
             {
@@ -162,7 +167,7 @@ namespace LocadoraDeVeiculos.WebApp.Controllers
 
         private FormularioPlanoCobrancaViewModel? CarregarDadosFormulario(FormularioPlanoCobrancaViewModel? dadosPrevios = null)
         {
-            var resultadoGrupos = servicoGrupos.SelecionarTodos();
+            var resultadoGrupos = servicoGrupos.SelecionarTodos(EmpresaId.GetValueOrDefault());
 
             if (resultadoGrupos.IsFailed)
             {

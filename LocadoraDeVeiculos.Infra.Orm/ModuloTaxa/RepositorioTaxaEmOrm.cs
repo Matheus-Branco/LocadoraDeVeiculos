@@ -21,5 +21,12 @@ namespace LocadoraDeVeiculos.Infra.Orm.ModuloTaxa
                 .Where(taxa => idsTaxasSelecionadas.Contains(taxa.Id))
                 .ToList();
         }
+
+        public List<Taxa> Filtrar(Func<Taxa, bool> predicate)
+        {
+            return ObterRegistros()
+                .Where(predicate)
+                .ToList();
+        }
     }
 }

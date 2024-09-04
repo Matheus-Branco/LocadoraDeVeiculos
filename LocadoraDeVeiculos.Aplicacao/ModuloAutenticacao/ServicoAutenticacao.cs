@@ -1,5 +1,8 @@
-﻿using FluentResults;
+﻿using System.Security.Authentication;
+using System.Security.Claims;
+using FluentResults;
 using LocadoraDeVeiculos.Dominio.ModuloAutenticacao;
+using LocadoraDeVeiculos.Dominio.ModuloFuncionario;
 using Microsoft.AspNetCore.Identity;
 
 namespace LocadoraDeVeiculos.Aplicacao.ModuloAutenticacao
@@ -10,14 +13,18 @@ namespace LocadoraDeVeiculos.Aplicacao.ModuloAutenticacao
         private readonly SignInManager<Usuario> signInManager;
         private readonly RoleManager<Perfil> roleManager;
 
+        private readonly IRepositorioFuncionario repositorioFuncionario;
+
         public ServicoAutenticacao(
             UserManager<Usuario> userManager, 
             SignInManager<Usuario> signInManager, 
-            RoleManager<Perfil> roleManager)
+            RoleManager<Perfil> roleManager, 
+            IRepositorioFuncionario repositorioFuncionario)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.roleManager = roleManager;
+            this.repositorioFuncionario = repositorioFuncionario;
         }
 
         public async Task<Result<Usuario>> Registrar(
@@ -79,6 +86,26 @@ namespace LocadoraDeVeiculos.Aplicacao.ModuloAutenticacao
             await signInManager.SignOutAsync();
 
             return Result.Ok();
+        }
+
+        public async Task<int?> ObterIdEmpresaAsync(ClaimsPrincipal claim)
+        {
+            var usuario = await userManager.GetUserAsync(claim);
+
+            var perfilSelecionado = TipoUsuarioEnum.Funcionario.ToString();
+
+            if (claim.IsInRole(perfilSelecionado))
+            {
+                var funcionario = repositorioFuncionario
+                    .SelecionarPorId(f => f.UsuarioId == usuario!.Id);
+
+                if (funcionario is null)
+                    throw new AuthenticationException("Não foi possível selecionar o funcionário registrado!");
+
+                return funcionario.EmpresaId;
+            }
+
+            return usuario?.Id;
         }
     }
 }

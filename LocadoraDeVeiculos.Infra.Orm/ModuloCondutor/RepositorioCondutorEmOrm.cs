@@ -28,5 +28,13 @@ namespace LocadoraDeVeiculos.Infra.Orm.ModuloCondutor
                 .Include(c => c.Cliente)
                 .ToList();
         }
+
+        public List<Condutor> Filtrar(Func<Condutor, bool> predicate)
+        {
+            return ObterRegistros()
+                .Include(c => c.Cliente)
+                .Where(predicate)
+                .ToList();
+        }
     }
 }

@@ -69,6 +69,15 @@ namespace LocadoraDeVeiculos.Infra.Orm.ModuloLocacao
             builder.HasMany(l => l.TaxasSelecionadas)
                 .WithMany(t => t.Locacoes)
                 .UsingEntity(j => j.ToTable("TBLocacaoTaxa"));
+
+            builder.Property(s => s.EmpresaId)
+                .HasColumnType("int")
+                .HasColumnName("Empresa_Id");
+
+            builder.HasOne(g => g.Empresa)
+                .WithMany()
+                .HasForeignKey(s => s.EmpresaId)
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

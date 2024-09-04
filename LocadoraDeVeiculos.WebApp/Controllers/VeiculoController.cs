@@ -1,21 +1,29 @@
 ﻿using AutoMapper;
+using LocadoraDeVeiculos.Aplicacao.ModuloAutenticacao;
 using LocadoraDeVeiculos.Aplicacao.ModuloGrupoVeiculos;
 using LocadoraDeVeiculos.Aplicacao.ModuloVeiculo;
 using LocadoraDeVeiculos.Dominio.ModuloVeiculo;
 using LocadoraDeVeiculos.WebApp.Controllers.Compartilhado;
 using LocadoraDeVeiculos.WebApp.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace LocadoraDeVeiculos.WebApp.Controllers
 {
+    [Authorize(Roles = "Empresa,Funcionario")]
     public class VeiculoController : WebControllerBase
     {
         private readonly ServicoVeiculo servico;
         private readonly ServicoGrupoVeiculos servicoGrupos;
         private readonly IMapper mapeador;
 
-        public VeiculoController(ServicoVeiculo servico, ServicoGrupoVeiculos servicoGrupos, IMapper mapeador)
+        public VeiculoController(
+            ServicoAutenticacao servicoAuth,
+            ServicoVeiculo servico, 
+            ServicoGrupoVeiculos servicoGrupos, 
+            IMapper mapeador
+            ) : base(servicoAuth)
         {
             this.servico = servico;
             this.servicoGrupos = servicoGrupos;
@@ -24,7 +32,7 @@ namespace LocadoraDeVeiculos.WebApp.Controllers
 
         public IActionResult Listar()
         {
-            var resultado = servico.SelecionarTodos();
+            var resultado = servico.SelecionarTodos(EmpresaId.GetValueOrDefault());
 
             if (resultado.IsFailed)
             {
@@ -78,7 +86,7 @@ namespace LocadoraDeVeiculos.WebApp.Controllers
                 return RedirectToAction(nameof(Listar));
             }
 
-            var resultadoGrupos = servicoGrupos.SelecionarTodos();
+            var resultadoGrupos = servicoGrupos.SelecionarTodos(EmpresaId.GetValueOrDefault());
 
             if (resultadoGrupos.IsFailed)
             {
@@ -189,7 +197,7 @@ namespace LocadoraDeVeiculos.WebApp.Controllers
         private FormularioVeiculoViewModel? CarregarDadosFormulario(
         FormularioVeiculoViewModel? dadosPrevios = null)
         {
-            var resultadoGrupos = servicoGrupos.SelecionarTodos();
+            var resultadoGrupos = servicoGrupos.SelecionarTodos(EmpresaId.GetValueOrDefault());
 
             if (resultadoGrupos.IsFailed)
             {

@@ -29,6 +29,15 @@ namespace LocadoraDeVeiculos.Infra.Orm.ModuloCombustivel
             builder.Property(c => c.ValorAlcool)
                 .HasColumnType("decimal(18,2)")
                 .IsRequired();
+
+            builder.Property(c => c.EmpresaId)
+                .HasColumnType("int")
+                .HasColumnName("Empresa_Id");
+
+            builder.HasOne(c => c.Empresa)
+                .WithMany()
+                .HasForeignKey(f => f.EmpresaId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
