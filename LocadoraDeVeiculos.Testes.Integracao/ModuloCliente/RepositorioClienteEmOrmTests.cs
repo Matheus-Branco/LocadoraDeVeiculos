@@ -13,7 +13,8 @@ namespace LocadoraDeVeiculos.Testes.Integracao.ModuloCliente
         {
             var cliente = Builder<Cliente>
                 .CreateNew()
-                .With(c => c.Id = 0)
+                .With(g => g.Id = 0)
+                .With(g => g.EmpresaId = usuarioAutenticado.Id)
                 .Build();
 
             repositorioCliente.Inserir(cliente);
@@ -29,7 +30,8 @@ namespace LocadoraDeVeiculos.Testes.Integracao.ModuloCliente
         {
             var cliente = Builder<Cliente>
                 .CreateNew()
-                .With(c => c.Id = 0)
+                .With(g => g.Id = 0)
+                .With(g => g.EmpresaId = usuarioAutenticado.Id)
                 .Persist();
 
             cliente.Nome = "Nome Atualizado";
@@ -48,7 +50,8 @@ namespace LocadoraDeVeiculos.Testes.Integracao.ModuloCliente
         {
             var cliente = Builder<Cliente>
                 .CreateNew()
-                .With(c => c.Id = 0)
+                .With(g => g.Id = 0)
+                .With(g => g.EmpresaId = usuarioAutenticado.Id)
                 .Persist();
 
             repositorioCliente.Excluir(cliente);

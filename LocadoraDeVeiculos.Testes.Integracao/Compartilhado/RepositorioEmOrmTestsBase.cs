@@ -1,4 +1,5 @@
 ﻿using FizzWare.NBuilder;
+using LocadoraDeVeiculos.Dominio.ModuloAutenticacao;
 using LocadoraDeVeiculos.Dominio.ModuloLocacao;
 using LocadoraDeVeiculos.Dominio.ModuloCliente;
 using LocadoraDeVeiculos.Dominio.ModuloCombustivel;
@@ -19,7 +20,7 @@ using LocadoraDeVeiculos.Infra.Orm.ModuloVeiculo;
 
 namespace LocadoraDeVeiculos.Testes.Integracao.Compartilhado
 {
-    public class RepositorioEmOrmTestsBase
+    public abstract class RepositorioEmOrmTestsBase
     {
         protected LocadoraDbContext dbContext;
 
@@ -32,15 +33,28 @@ namespace LocadoraDeVeiculos.Testes.Integracao.Compartilhado
         protected RepositorioGrupoVeiculosEmOrm repositorioGrupo;
         protected RepositorioPlanoCobrancaEmOrm repositorioPlano;
 
+        protected Usuario usuarioAutenticado;
+
         [TestInitialize]
         public void Inicializar()
         {
+            dbContext.Locacoes.RemoveRange(dbContext.Locacoes);
+            dbContext.ConfiguracoesCombustiveis.RemoveRange(dbContext.ConfiguracoesCombustiveis);
             dbContext.Taxas.RemoveRange(dbContext.Taxas);
             dbContext.PlanosCobranca.RemoveRange(dbContext.PlanosCobranca);
             dbContext.Clientes.RemoveRange(dbContext.Clientes);
             dbContext.Condutores.RemoveRange(dbContext.Condutores);
             dbContext.Veiculos.RemoveRange(dbContext.Veiculos);
             dbContext.GruposVeiculos.RemoveRange(dbContext.GruposVeiculos);
+            dbContext.Usuarios.RemoveRange(dbContext.Usuarios);
+
+            usuarioAutenticado = new Usuario()
+            {
+                UserName = "Empresa Teste",
+                Email = "empresa_teste@gmail.com"
+            };
+
+            dbContext.Usuarios.Add(usuarioAutenticado);
 
             dbContext.SaveChanges();
 

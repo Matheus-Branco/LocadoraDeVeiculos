@@ -14,13 +14,15 @@ namespace LocadoraDeVeiculos.Testes.Integracao.ModuloCondutor
         {
             var cliente = Builder<Cliente>
                 .CreateNew()
-                .With(c => c.Id = 0)
+                .With(g => g.Id = 0)
+                .With(g => g.EmpresaId = usuarioAutenticado.Id)
                 .Persist();
 
             var condutor = Builder<Condutor>
                 .CreateNew()
                 .With (c => c.Id = 0)
-                .With(c => c.ClienteId = cliente.Id)
+                .With(g => g.Id = 0)
+                .With(g => g.EmpresaId = usuarioAutenticado.Id)
                 .Build();
 
             repositorioCondutor.Inserir(condutor);
@@ -36,12 +38,14 @@ namespace LocadoraDeVeiculos.Testes.Integracao.ModuloCondutor
         {
             var cliente = Builder<Cliente>
                 .CreateNew()
-                .With(c => c.Id=0)
+                .With(g => g.Id = 0)
+                .With(g => g.EmpresaId = usuarioAutenticado.Id)
                 .Persist();
 
             var condutor = Builder<Condutor>
                 .CreateNew()
-                .With(c => c.Id = 0)
+                .With(g => g.Id = 0)
+                .With(g => g.EmpresaId = usuarioAutenticado.Id)
                 .With(c => c.ClienteId = cliente.Id)
                 .Persist();
 
@@ -61,12 +65,14 @@ namespace LocadoraDeVeiculos.Testes.Integracao.ModuloCondutor
         {
             var cliente = Builder<Cliente>
                 .CreateNew()
-                .With(c => c.Id = 0)
+                .With(g => g.Id = 0)
+                .With(g => g.EmpresaId = usuarioAutenticado.Id)
                 .Persist();
 
             var condutor = Builder<Condutor>
                 .CreateNew()
-                .With(c => c.Id = 0)
+                .With(g => g.Id = 0)
+                .With(g => g.EmpresaId = usuarioAutenticado.Id)
                 .With(c => c.ClienteId= cliente.Id)
                 .Persist();
 

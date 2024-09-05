@@ -25,6 +25,7 @@ namespace LocadoraDeVeiculos.Infra.Orm.Compartilhado
         public DbSet<ConfiguracaoCombustivel> ConfiguracoesCombustiveis { get; set; }
         public DbSet<Locacao> Locacoes { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
